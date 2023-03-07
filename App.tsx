@@ -1,20 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "react-native";
+
+import {
+  useFonts,
+  DidactGothic_400Regular,
+} from '@expo-google-fonts/didact-gothic';
+
+import { ThemeProvider } from 'styled-components/native';
+import themes from './src/themes';
+import { Loading } from './src/components/Loading';
+import { Routes } from './src/routes';
+
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+  const [fontsLoaded] = useFonts({ DidactGothic_400Regular });
+  const { DARK } = themes
+   return (
+    <ThemeProvider theme={themes}>
+      <StatusBar 
+        barStyle="light-content"
+        backgroundColor="transparent"
+        translucent
+        />
+      {!fontsLoaded ? <Loading /> : <Routes/>}
+    </ThemeProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

@@ -7,11 +7,9 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 export const Container = styled(SafeAreaView)`  
     flex-direction: row;
     width: 100%;
-    background-color: ${({theme})=> theme.LIGHT.COLORS.SECONDARY};  
+    background-color: ${({theme})=> theme.COLORS.SECONDARY};  
     align-items: center;  
-    justify-content: space-between;
-    
-   
+    justify-content: space-between; 
 `;
 
 export const ButtonContainer = styled(TouchableOpacity)`
@@ -21,6 +19,6 @@ export const ButtonContainer = styled(TouchableOpacity)`
 `
 
 export const  NavButton =  styled(AntDesign).attrs(({theme})=>({
-    color: theme.LIGHT.COLORS.WHITE,
+    color: theme.COLORS.WHITE,
     size: 20
 }))``;

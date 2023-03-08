@@ -6,7 +6,7 @@ import { useTheme } from "styled-components";
 export const Routes = () => {
   const theme = useTheme();
   return (
-    <View style={{ backgroundColor: theme.LIGHT.COLORS.SECONDARY, flex: 1 }}>
+    <View style={{ backgroundColor: theme.COLORS.SECONDARY, flex: 1 }}>
       <NavigationContainer>
         <AppRoutes />
       </NavigationContainer>

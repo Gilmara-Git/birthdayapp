@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { AntDesign } from '@expo/vector-icons';
 import { Dimensions } from 'react-native';
 const windowHeight = Dimensions.get('window').height;
-const dinamicMargin = windowHeight > 750 ? '100px': '0px';
+const dinamicMargin = windowHeight > 800 ? '100px': '0px';
 
 
 export type IconPropsColorStyle = 'PRIMARY' | 'SECONDARY'; 
@@ -16,22 +16,22 @@ type IconProps = {
 
 export const Container = styled(SafeAreaView)`
     flex:1;
-    background-color: ${({theme})=> theme.LIGHT.COLORS.SECONDARY};
+    background-color: ${({theme})=> theme.COLORS.SECONDARY};
     justify-content: center;
     align-items: center;
     padding: 20px;
 `
 
 export const Message = styled.Text`
-    font-family: ${({theme})=>theme.LIGHT.FONT_FAMILY.DIDACT_GOTHIC_400};
+    font-family: ${({theme})=>theme.FONT_FAMILY.DIDACT_GOTHIC_400};
     text-align: center;
-    margin-top: ${dinamicMargin};
+    /* margin-top: ${dinamicMargin}; */
 `
 
 
 
 export const HeartIcon = styled(AntDesign).attrs<IconProps>(({size, color, theme })=>({
-    color: color === 'PRIMARY' ? theme.LIGHT.COLORS.PRIMARY : theme.LIGHT.COLORS.WHITE,
+    color: color === 'PRIMARY' ? theme.COLORS.PRIMARY : theme.COLORS.WHITE,
     size: size
 }))`
     margin: 10px 10px;

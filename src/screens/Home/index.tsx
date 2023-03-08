@@ -25,14 +25,14 @@ export const Home =({navigation}: HomeNavProps)=>{
     }
 
     const handleThemeChange = async ()=>{
-        console.log('Fiu clicado');
+        // console.log('I was clicked');
         setThemeType(prevState => prevState === 'light' ? 'dark': 'light')
         try{
 
             await setTheme(themeType)
 
             const storedTheme  = await getTheme();
-            console.log(storedTheme, 'linha33')
+        
 
         }catch(error){
             Alert.alert(`${error}, It was not possible to get theme`)

@@ -7,7 +7,7 @@ import { TouchableOpacity } from 'react-native';
 
 export const Container = styled(SafeAreaView)`
     flex:1;
-    background-color: ${({theme})=> theme.LIGHT.COLORS.SECONDARY};
+    background-color: ${({theme})=> theme.COLORS.SECONDARY};
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -22,7 +22,7 @@ export const ThemeContainer = styled(TouchableOpacity)`
 `
 export const ThemeIcon  = styled(MaterialCommunityIcons).attrs(({theme})=>({
     size: 24,    
-    color: theme.LIGHT.COLORS.WHITE
+    color: theme.COLORS.WHITE
 }))``
 
 export const CakeContainer = styled(TouchableOpacity)`
@@ -33,8 +33,8 @@ export const CakeContainer = styled(TouchableOpacity)`
 `
 export const ButtonText = styled.Text`
     ${({theme})=> css`
-    font-family: ${theme.LIGHT.FONT_FAMILY.DIDACT_GOTHIC_400};
-    color: ${theme.LIGHT.COLORS.WHITE};
+    font-family: ${theme.FONT_FAMILY.DIDACT_GOTHIC_400};
+    color: ${theme.COLORS.WHITE};
     
     `}
     font-size: 28px;
@@ -42,6 +42,6 @@ export const ButtonText = styled.Text`
 
 export const GiftButton = styled(AntDesign).attrs(({theme})=>({
     size: 200,
-    color: theme.LIGHT.COLORS.PRIMARY
+    color: theme.COLORS.PRIMARY
 
 }))``;

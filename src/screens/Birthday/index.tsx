@@ -40,7 +40,7 @@ export const Birthday =({navigation}: BirthdayNavProps)=>{
         setIsLoaded(true);
         const timer = setTimeout(()=>{
             setIsLoaded(false);
-        }, 200)
+        }, 100)
       
         return ()=> clearTimeout(timer);
     },[]))
@@ -49,7 +49,7 @@ export const Birthday =({navigation}: BirthdayNavProps)=>{
     return (
         <Container>
             <Header onBackCommand={handleGoback}/>
-            <Message style={{fontSize: 32, color: theme.LIGHT.COLORS.PRIMARY}}>Feliz Aniversário meu amor!!</Message>
+            <Message style={{fontSize: 32, color: theme.COLORS.PRIMARY}}>Feliz Aniversário meu amor!!</Message>
             <HeartIcon name="heart" size={16} color="PRIMARY"/>
             <HeartIcon name="heart" size={32} color="SECONDARY"/>
             <HeartIcon name="heart" size={64} color="PRIMARY"/>
@@ -62,12 +62,12 @@ export const Birthday =({navigation}: BirthdayNavProps)=>{
                 data={photoList}
                 keyExtractor={item=>item}
                 renderItem={({item})=>(
-                    <ImageContainer style={{borderWidth: 1, borderColor: theme.LIGHT.COLORS.PRIMARY}} source={item}/>
+                    <ImageContainer style={{borderWidth: 1, borderColor: theme.COLORS.PRIMARY}} source={item}/>
 
                 )}
             />
                 }
-            <Message style={{fontSize: 20, color: theme.LIGHT.COLORS.WHITE}}>March 4th 2023</Message>
+            <Message style={{fontSize: 20, color: theme.COLORS.WHITE}}>March 4th 2023</Message>
                  
         </Container>
     )

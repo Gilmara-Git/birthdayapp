@@ -2,7 +2,7 @@
 <h1 align="center">Birthday App</h1>
 
 
-<img src="https://ik.imagekit.io/cnbmdh4b9w/ezgif.com-video-to-gif_scI_g9Rn4.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1676143167985" alt="to-do track"/>
+<img src="https://ik.imagekit.io/cnbmdh4b9w/ezgif.com-video-to-gif__3__nnfSLGJKd.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1678280932898" alt="to-do track"/>
 
 </div>
 

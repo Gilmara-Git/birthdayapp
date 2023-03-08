@@ -13,7 +13,7 @@ import { Routes } from './src/routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({ DidactGothic_400Regular });
-  const { DARK } = themes
+
    return (
     <ThemeProvider theme={themes}>
       <StatusBar 

@@ -17,6 +17,7 @@ export const Container = styled(SafeAreaView)`
 export const ButtonContainer = styled(TouchableOpacity)`
  flex-direction: row;
  width: 100%;
+
 `
 
 export const  NavButton =  styled(AntDesign).attrs(({theme})=>({

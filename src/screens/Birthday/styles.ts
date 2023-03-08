@@ -23,7 +23,7 @@ export const Container = styled(SafeAreaView)`
 `
 
 export const Message = styled.Text`
-    font-family: ${({theme})=>theme.FONT_FAMILY.DIDACT_GOTHIC_400};
+    font-family: ${({theme})=>theme.LIGHT.FONT_FAMILY.DIDACT_GOTHIC_400};
     text-align: center;
     margin-top: ${dinamicMargin};
 `
@@ -41,7 +41,6 @@ export const ImageWrapper = styled.View`
 border-radius: 10px;
 width: 100%;
 ;
-
 `;
 export const ImageContainer = styled.Image`
     height: 200px;

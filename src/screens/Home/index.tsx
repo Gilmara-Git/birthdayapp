@@ -4,6 +4,7 @@ import { useState } from 'react';
 import  {Alert } from 'react-native';
 import  {getTheme } from '../../storage/theme/getTheme';
 import { setTheme } from '../../storage/theme/setTheme';
+
  
 export type RouteProps = {
     home: undefined; 
@@ -18,6 +19,7 @@ type HomeNavProps = {
 
 export const Home =({navigation}: HomeNavProps)=>{
     const [themeType, setThemeType] = useState('dark');
+
     const showBdayMessage = ()=>{
         navigation.navigate('cake');
     }

@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { AntDesign } from '@expo/vector-icons';
 import  { MaterialCommunityIcons } from '@expo/vector-icons';
 import { TouchableOpacity } from 'react-native';
-import { getTheme } from '../../storage/theme/getTheme';
+
 
 export const Container = styled(SafeAreaView)`
     flex:1;

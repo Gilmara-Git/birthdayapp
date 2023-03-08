@@ -1,10 +1,13 @@
 import  { Container, Message, HeartIcon, ImageContainer } from './styles';
+import { useFocusEffect } from '@react-navigation/native';
+import { useCallback } from 'react';
+import  { Loading } from '../../components/Loading';
 import photo   from '../../assets/cropped.jpg';
-import EuNenem from '../../assets/euNenem.png';
+import skill from '../../assets/skill.jpg'
 import giltoto from '../../assets/giltoto.jpg';
+import EuNenem from '../../assets/euNenem.png';
 import junior from '../../assets/junior.png';
 import pirata from '../../assets/pirata.png';
-import skill from '../../assets/skill.jpg'
 import toto from '../../assets/toto.png';
 import totoCarinhoJoyce from '../../assets/totoCarinhoJoyce.png';
 import totoOlhar from '../../assets/TotoOlharJoyce.png';
@@ -26,12 +29,22 @@ type BirthdayNavProps ={
 
 export const Birthday =({navigation}: BirthdayNavProps)=>{
     const [ photoList, setPhotoList] =  useState([ photo, EuNenem, giltoto, junior, pirata, skill, totoTouca, totoOlhar, totoCarinhoJoyce, toto, buque, casamento1, casamento2, casamento3 ])
-    const [ loading, setLoading ] = useState(true);
+    const [ isLoaded, setIsLoaded ] = useState(true);
     const theme = useTheme();  
 
     const handleGoback =()=>{
         navigation.navigate("home")
     }
+
+    useFocusEffect(useCallback(()=>{     
+        setIsLoaded(true);
+        const timer = setTimeout(()=>{
+            setIsLoaded(false);
+        }, 200)
+      
+        return ()=> clearTimeout(timer);
+    },[]))
+   
 
     return (
         <Container>
@@ -41,6 +54,7 @@ export const Birthday =({navigation}: BirthdayNavProps)=>{
             <HeartIcon name="heart" size={32} color="SECONDARY"/>
             <HeartIcon name="heart" size={64} color="PRIMARY"/>
 
+            { isLoaded ? <Loading /> :
             <FlatList
             contentContainerStyle={{ marginTop: 50}} 
                 horizontal
@@ -52,6 +66,7 @@ export const Birthday =({navigation}: BirthdayNavProps)=>{
 
                 )}
             />
+                }
             <Message style={{fontSize: 20, color: theme.LIGHT.COLORS.WHITE}}>March 4th 2023</Message>
                  
         </Container>

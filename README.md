@@ -2,16 +2,16 @@
 <h1 align="center">Birthday App</h1>
 
 
-<img src="https://ik.imagekit.io/cnbmdh4b9w/ezgif.com-video-to-gif__3__nnfSLGJKd.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1678280932898" alt="Birthday App gif"/>
+<img src="https://ik.imagekit.io/cnbmdh4b9w/ezgif.com-video-to-gif_scI_g9Rn4.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1676143167985" alt="to-do track"/>
 
 </div>
 
 
 # Menu
-<a href="#about">About</a>
-<a href="#motivation">Motivation</a>
-<a href="#technologies">Technologies</a>
-<a href="#to-run-the-project">Run the project</a>
+- <a href="#about">About</a>
+- <a href="#motivation">Motivation</a>
+- <a href="#technologies">Technologies</a>
+- <a href="#to-run-the-project">Run the project</a>
 # About
 
 This Birthday App was developed in **React Native**.

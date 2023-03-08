@@ -1,10 +1,8 @@
-<div align='center'>
+<div align="center">
 <h1 align="center">Birthday App</h1>
 
-<img src="" alt="layout">
 
-<img src="" alt="Birthday App video"/>
-
+<img src="https://ik.imagekit.io/cnbmdh4b9w/ezgif.com-video-to-gif__3__nnfSLGJKd.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1678280932898"  alt="Birthday App gif"/>
 
 </div>
 
@@ -12,8 +10,8 @@
 
 This Birthday App was developed in **React Native**.
 
-- This a simple application to surprise someone you love on their birthday.
-- You got the person to touch the ***gift***, the ***cake*** to revel a message along with memorable photos.
+- This an application to surprise someone you love on their birthday.
+- You got the person to touch the ***gift***, the ***cake*** to reveal a message along with memorable photos.
 
 
 
@@ -29,7 +27,8 @@ This Birthday App was developed in **React Native**.
 - Expo
 - Expo google fonts
 - Expo Vector icons
-- AsyncStorage to implement Theme(Light/Dark)
+- AsyncStorage
+- ..*more to come*
 
 
 # To run the project
